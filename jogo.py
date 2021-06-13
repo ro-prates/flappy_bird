@@ -117,7 +117,7 @@ class Cano:
         topo_mask = pygame.mask.from_surface(self.CANO_TOPO)
         base_mask = pygame.mask.from_surface(self.CANO_BASE)
         distancia_topo = (self.x - passaro.x, self.pos_topo - round(passaro.y)) 
-        distancia_base = (self.x - passaro.x, self.pos_topo - round(passaro.y))
+        distancia_base = (self.x - passaro.x, self.pos_base - round(passaro.y))
         topo_ponto = passaro_mask.overlap(topo_mask, distancia_topo)
         base_ponto = passaro_mask.overlap(base_mask, distancia_base)
 
