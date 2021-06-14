@@ -1,7 +1,7 @@
 import pygame, random, os, neat
 
 # define se a inteligência joga ou não
-ai_jogando = False  
+ai_jogando = True  
 geracao = 0
 
 # definindo as constantes utilizadas no jogo
@@ -194,7 +194,7 @@ def main(genomas, config):
 
     rodando = True
     while rodando:
-        relogio.tick(60) # quantidade de frames por segundo
+        relogio.tick(30) # quantidade de frames por segundo
         
         # interação com o usuário
         for evento in pygame.event.get():
